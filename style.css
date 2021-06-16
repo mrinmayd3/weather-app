@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #868b8e;
+  background-image: url(https://images.unsplash.com/photo-1469106233956-20341cc41f8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search {
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.search input {
+  width: 350px;
+  padding: 15px;
+  color: rgb(230, 230, 230);
+  border: none;
+  border-bottom: 2px solid #05445e;
+  background: transparent;
+  font-size: large;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input::placeholder {
+  color: rgb(228, 228, 228);
+}
+
+#searchBtn {
+  padding: 15px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #05445e;
+  padding-left: 0;
+  font-size: large;
+  cursor: pointer;
+}
+
+.error {
+  color: #f0345d;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* main weather card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.main-head > img {
+  width: 100px;
+  height: 100px;
+}
+
+.main-card {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #75e6da;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-head > h1 {
+  font-size: 4rem;
+  margin-left: 10px;
+}
+
+.btn {
+  font-size: 2rem;
+  border: none;
+  background: transparent;
+  color: azure;
+  display: inline;
+}
+
+.main-card > * {
+  padding: 5px;
+}
+
+.main-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-details > p {
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* daily forecast */
+h2 {
+  margin-top: 30px;
+  letter-spacing: 10px;
+}
+
+.daily {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#daily-img {
+  height: 50px;
+  width: 50px;
+}
+
+.daily-card {
+  padding: 15px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 450px) {
+  body {
+    background-color: rgb(7, 6, 6);
+  }
+
+  .main-card {
+    width: 280px;
+  }
+
+  .daily {
+    flex-direction: column;
+  }
+
+  .search input {
+    width: 250px;
+  }
+}
